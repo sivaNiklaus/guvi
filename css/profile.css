@@ -1,0 +1,10 @@
+.user-values
+{
+    text-align: center;
+}
+.align-details
+{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
