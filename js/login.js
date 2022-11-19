@@ -6,7 +6,7 @@ $('#login-submit').click(function (e) {
     var password = $('#password').val();
     localStorage.setItem("myValue", email);
     $.ajax({
-        url: "/guvi/php/login.php",
+        url: "/guvi-main/php/login.php",
         type: "POST",
         data: {
             email: email,
@@ -15,7 +15,7 @@ $('#login-submit').click(function (e) {
         async: true,
         success: function (response) {
             if (response == "true") {
-                location.href = '/guvi/profile.html';
+                location.href = '/guvi-main/profile.html';
             }
             else if (response == "false") {
                 error.textContent = "Account Not found";
