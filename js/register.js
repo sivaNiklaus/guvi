@@ -17,7 +17,7 @@ submitButton.addEventListener('click', function (e) {
         alert('password does not match with confirm password');
     else {
         $.ajax({
-            url: "/guvi/php/register.php",
+            url: "/guvi-main/php/register.php",
             type: "POST",
             data: {
                 name: name,
