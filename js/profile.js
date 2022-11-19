@@ -24,7 +24,7 @@ if (b != null) {
     console.log(dataChange);
 
     $.ajax({
-        url: "/guvi/php/profile.php",
+        url: "/guvi-main/php/profile.php",
         type: "POST",
         data: {
             email: b
@@ -74,13 +74,13 @@ if (b != null) {
     });
 }
 else {
-    location.href = '/guvi/index.html';
+    location.href = '/guvi-main/index.html';
 }
 //function to update
 function change() {
 
     $.ajax({
-        url: "/guvi/php/profileUpdate.php",
+        url: "/guvi-main/php/profileUpdate.php",
         type: "POST",
         data: dataChange,
         async: true,
@@ -108,5 +108,5 @@ function change() {
 
 logout.addEventListener('click', function () {
     localStorage.removeItem("myValue");
-    location.href = '/guvi/index.html';
+    location.href = '/guvi-main/index.html';
 });
